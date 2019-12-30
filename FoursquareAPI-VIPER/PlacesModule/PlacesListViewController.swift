@@ -8,14 +8,57 @@
 
 import UIKit
 
-class PlacesListViewController: UIViewController {
+final class PlacesListViewController: UIViewController {
+
+    var presenter: PlacesListPresenterProtocol?
+
+    @IBOutlet private weak var tableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        presenter?.notifyViewLoaded()
         
     }
+}
 
+extension PlacesListViewController: PlacesListViewProtocol {
+
+    func showLoading() {
+
+    }
+
+    func hideLoading() {
+
+    }
+
+    func reloadData() {
+        tableView.reloadData()
+    }
+
+    func setNavigationTitle(with title: String) {
+        navigationItem.title = title
+    }
+
+    func setupInitialView() {
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
+}
+
+extension PlacesListViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+
+        return 0
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter?.didSelectPlaces(at: indexPath.row)
+    }
 
 }
 

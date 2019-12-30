@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlacesListViewController" customModule="FoursquareAPI_VIPER" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="exP-Pn-mDX" id="1h9-Jk-S2u"/>
                 <outlet property="view" destination="iN0-l3-epB" id="uT5-5a-OcV"/>
             </connections>
         </placeholder>
@@ -16,7 +17,19 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="exP-Pn-mDX">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="exP-Pn-mDX" secondAttribute="trailing" id="0it-wI-SVZ"/>
+                <constraint firstItem="exP-Pn-mDX" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="MZ3-gF-bJJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="exP-Pn-mDX" secondAttribute="bottom" id="bqD-Of-Zk6"/>
+                <constraint firstItem="exP-Pn-mDX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="eMN-KB-mza"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="139" y="104"/>
         </view>

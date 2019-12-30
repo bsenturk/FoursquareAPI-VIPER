@@ -8,15 +8,18 @@
 
 import UIKit
 
-protocol PlacesListViewProtocol {
+protocol PlacesListViewProtocol: class {
     func showLoading()
     func hideLoading()
     func reloadData()
+    func setupInitialView()
+    func setNavigationTitle(with title: String)
 }
 
-protocol PlacesListPresenterProtocol {
+protocol PlacesListPresenterProtocol: class {
     //PlacesListView -> PlacesListPresenter
     func notifyViewLoaded()
+    func placesCount() -> Int
     func didSelectPlaces(at index: Int)
 
     //PlacesListInteractor -> PlacesListPresenter
@@ -24,13 +27,13 @@ protocol PlacesListPresenterProtocol {
     func placesListFetchFailed()
 }
 
-protocol PlacesListRouterProtocol {
+protocol PlacesListRouterProtocol: class {
     //PlacesListPresenter -> PlacesListRoter
     func popBack()
     func present()
 }
 
-protocol PlacesListInteractorProtocol {
+protocol PlacesListInteractorProtocol: class {
     //Presenter -> Interactor
     func fetchPlaces()
 }

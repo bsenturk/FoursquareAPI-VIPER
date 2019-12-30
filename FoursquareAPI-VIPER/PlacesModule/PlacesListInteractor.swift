@@ -9,5 +9,12 @@
 import UIKit
 
 final class PlacesListInteractor {
+    weak var presenter: PlacesListPresenterProtocol?
+}
 
+extension PlacesListInteractor: PlacesListInteractorProtocol {
+
+    func fetchPlaces() {
+        Network.shared.request()
+    }
 }
