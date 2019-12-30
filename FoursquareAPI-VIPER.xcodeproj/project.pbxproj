@@ -1,0 +1,425 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA1EF9C823BA20B700104D4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1EF9C723BA20B700104D4B /* AppDelegate.swift */; };
+		FA1EF9CA23BA20B700104D4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1EF9C923BA20B700104D4B /* SceneDelegate.swift */; };
+		FA1EF9CC23BA20B700104D4B /* PlacesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1EF9CB23BA20B700104D4B /* PlacesListViewController.swift */; };
+		FA1EF9CF23BA20B700104D4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA1EF9CD23BA20B700104D4B /* Main.storyboard */; };
+		FA1EF9D123BA20B900104D4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA1EF9D023BA20B900104D4B /* Assets.xcassets */; };
+		FA1EF9D423BA20B900104D4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA1EF9D223BA20B900104D4B /* LaunchScreen.storyboard */; };
+		FA1EF9E023BA211B00104D4B /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1EF9DF23BA211B00104D4B /* Network.swift */; };
+		FABA677A23BA25FB009DC03C /* PlacesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABA677923BA25FB009DC03C /* PlacesProtocol.swift */; };
+		FABA677C23BA27EC009DC03C /* PlacesListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABA677B23BA27EC009DC03C /* PlacesListInteractor.swift */; };
+		FABA677E23BA2816009DC03C /* PlacesListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABA677D23BA2816009DC03C /* PlacesListPresenter.swift */; };
+		FABA678023BA2833009DC03C /* PlacesListEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABA677F23BA2833009DC03C /* PlacesListEntity.swift */; };
+		FABA678223BA2842009DC03C /* PlacesListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABA678123BA2842009DC03C /* PlacesListRouter.swift */; };
+		FABA678523BA28E1009DC03C /* PlacesListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FABA678423BA28E1009DC03C /* PlacesListViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FA1EF9C423BA20B700104D4B /* FoursquareAPI-VIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FoursquareAPI-VIPER.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA1EF9C723BA20B700104D4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA1EF9C923BA20B700104D4B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FA1EF9CB23BA20B700104D4B /* PlacesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesListViewController.swift; sourceTree = "<group>"; };
+		FA1EF9CE23BA20B700104D4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA1EF9D023BA20B900104D4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA1EF9D323BA20B900104D4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA1EF9D523BA20B900104D4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA1EF9DF23BA211B00104D4B /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		FABA677923BA25FB009DC03C /* PlacesProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesProtocol.swift; sourceTree = "<group>"; };
+		FABA677B23BA27EC009DC03C /* PlacesListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesListInteractor.swift; sourceTree = "<group>"; };
+		FABA677D23BA2816009DC03C /* PlacesListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesListPresenter.swift; sourceTree = "<group>"; };
+		FABA677F23BA2833009DC03C /* PlacesListEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesListEntity.swift; sourceTree = "<group>"; };
+		FABA678123BA2842009DC03C /* PlacesListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesListRouter.swift; sourceTree = "<group>"; };
+		FABA678423BA28E1009DC03C /* PlacesListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlacesListViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA1EF9C123BA20B700104D4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA1EF9BB23BA20B700104D4B = {
+			isa = PBXGroup;
+			children = (
+				FA1EF9C623BA20B700104D4B /* FoursquareAPI-VIPER */,
+				FA1EF9C523BA20B700104D4B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA1EF9C523BA20B700104D4B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA1EF9C423BA20B700104D4B /* FoursquareAPI-VIPER.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA1EF9C623BA20B700104D4B /* FoursquareAPI-VIPER */ = {
+			isa = PBXGroup;
+			children = (
+				FA1EF9DE23BA210500104D4B /* Network */,
+				FA1EF9DB23BA20BF00104D4B /* Application */,
+				FABA677723BA2540009DC03C /* Protocols */,
+				FA1EF9DC23BA20CB00104D4B /* PlacesModule */,
+				FA1EF9CD23BA20B700104D4B /* Main.storyboard */,
+				FA1EF9D223BA20B900104D4B /* LaunchScreen.storyboard */,
+				FA1EF9DD23BA20DB00104D4B /* Resources */,
+				FA1EF9D523BA20B900104D4B /* Info.plist */,
+			);
+			path = "FoursquareAPI-VIPER";
+			sourceTree = "<group>";
+		};
+		FA1EF9DB23BA20BF00104D4B /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				FA1EF9C723BA20B700104D4B /* AppDelegate.swift */,
+				FA1EF9C923BA20B700104D4B /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		FA1EF9DC23BA20CB00104D4B /* PlacesModule */ = {
+			isa = PBXGroup;
+			children = (
+				FA1EF9CB23BA20B700104D4B /* PlacesListViewController.swift */,
+				FABA677B23BA27EC009DC03C /* PlacesListInteractor.swift */,
+				FABA677D23BA2816009DC03C /* PlacesListPresenter.swift */,
+				FABA677F23BA2833009DC03C /* PlacesListEntity.swift */,
+				FABA678123BA2842009DC03C /* PlacesListRouter.swift */,
+				FABA678323BA28CA009DC03C /* Views */,
+			);
+			path = PlacesModule;
+			sourceTree = "<group>";
+		};
+		FA1EF9DD23BA20DB00104D4B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FA1EF9D023BA20B900104D4B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FA1EF9DE23BA210500104D4B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FA1EF9DF23BA211B00104D4B /* Network.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FABA677723BA2540009DC03C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FABA677823BA2551009DC03C /* Places */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		FABA677823BA2551009DC03C /* Places */ = {
+			isa = PBXGroup;
+			children = (
+				FABA677923BA25FB009DC03C /* PlacesProtocol.swift */,
+			);
+			path = Places;
+			sourceTree = "<group>";
+		};
+		FABA678323BA28CA009DC03C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FABA678423BA28E1009DC03C /* PlacesListViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA1EF9C323BA20B700104D4B /* FoursquareAPI-VIPER */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA1EF9D823BA20B900104D4B /* Build configuration list for PBXNativeTarget "FoursquareAPI-VIPER" */;
+			buildPhases = (
+				FA1EF9C023BA20B700104D4B /* Sources */,
+				FA1EF9C123BA20B700104D4B /* Frameworks */,
+				FA1EF9C223BA20B700104D4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FoursquareAPI-VIPER";
+			productName = "FoursquareAPI-VIPER";
+			productReference = FA1EF9C423BA20B700104D4B /* FoursquareAPI-VIPER.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA1EF9BC23BA20B700104D4B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Burak Şentürk";
+				TargetAttributes = {
+					FA1EF9C323BA20B700104D4B = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = FA1EF9BF23BA20B700104D4B /* Build configuration list for PBXProject "FoursquareAPI-VIPER" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA1EF9BB23BA20B700104D4B;
+			productRefGroup = FA1EF9C523BA20B700104D4B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA1EF9C323BA20B700104D4B /* FoursquareAPI-VIPER */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA1EF9C223BA20B700104D4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FABA678523BA28E1009DC03C /* PlacesListViewController.xib in Resources */,
+				FA1EF9D423BA20B900104D4B /* LaunchScreen.storyboard in Resources */,
+				FA1EF9D123BA20B900104D4B /* Assets.xcassets in Resources */,
+				FA1EF9CF23BA20B700104D4B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA1EF9C023BA20B700104D4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA1EF9CC23BA20B700104D4B /* PlacesListViewController.swift in Sources */,
+				FABA677A23BA25FB009DC03C /* PlacesProtocol.swift in Sources */,
+				FABA678023BA2833009DC03C /* PlacesListEntity.swift in Sources */,
+				FABA678223BA2842009DC03C /* PlacesListRouter.swift in Sources */,
+				FABA677C23BA27EC009DC03C /* PlacesListInteractor.swift in Sources */,
+				FA1EF9C823BA20B700104D4B /* AppDelegate.swift in Sources */,
+				FA1EF9E023BA211B00104D4B /* Network.swift in Sources */,
+				FABA677E23BA2816009DC03C /* PlacesListPresenter.swift in Sources */,
+				FA1EF9CA23BA20B700104D4B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FA1EF9CD23BA20B700104D4B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA1EF9CE23BA20B700104D4B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA1EF9D223BA20B900104D4B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA1EF9D323BA20B900104D4B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA1EF9D623BA20B900104D4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA1EF9D723BA20B900104D4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA1EF9D923BA20B900104D4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "FoursquareAPI-VIPER/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.buraksenturk.FoursquareAPI-VIPER";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA1EF9DA23BA20B900104D4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "FoursquareAPI-VIPER/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.buraksenturk.FoursquareAPI-VIPER";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA1EF9BF23BA20B700104D4B /* Build configuration list for PBXProject "FoursquareAPI-VIPER" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA1EF9D623BA20B900104D4B /* Debug */,
+				FA1EF9D723BA20B900104D4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA1EF9D823BA20B900104D4B /* Build configuration list for PBXNativeTarget "FoursquareAPI-VIPER" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA1EF9D923BA20B900104D4B /* Debug */,
+				FA1EF9DA23BA20B900104D4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA1EF9BC23BA20B700104D4B /* Project object */;
+}
