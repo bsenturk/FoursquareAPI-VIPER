@@ -43,17 +43,24 @@ extension PlacesListViewController: PlacesListViewProtocol {
     func setupInitialView() {
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.register(UINib(nibName: "PlacesListCell",
+                                 bundle: nil), forCellReuseIdentifier: "PlacesListCell")
+        tableView.rowHeight = UITableView.automaticDimension
     }
 }
 
 extension PlacesListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
-        return 0
+        return presenter?.venues().count ?? 0
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PlacesListCell",
+                                                 for: indexPath) as! PlacesListCell
+        guard let venues = presenter?.venues() else { return UITableViewCell() }
+        cell.venues = venues[indexPath.row]
+        return cell
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

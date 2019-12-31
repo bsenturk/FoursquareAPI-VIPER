@@ -9,16 +9,38 @@
 import UIKit
 
 final class PlacesListRouter {
-    static func createModule(using navigationController: UINavigationController) -> PlacesListViewController {
+    weak var presenter: PlacesListPresenterProtocol?
+
+    static func createModule() -> PlacesListViewController {
 
         let router = PlacesListRouter()
         let presenter = PlacesListPresenter()
         let interactor = PlacesListInteractor()
-        let placesListViewController = PlacesListViewController(nibName: "PlacesListViewController",
+        let view = PlacesListViewController(nibName: "PlacesListViewController",
                                                                 bundle: nil)
 
-        
+        presenter.interactor = interactor
+        presenter.router = router
+        presenter.view = view
 
-        return placesListViewController
+        router.presenter = presenter
+
+        interactor.presenter = presenter
+
+        view.presenter = presenter
+
+        return view
     }
+}
+
+extension PlacesListRouter: PlacesListRouterProtocol {
+    func popBack() {
+
+    }
+
+    func present() {
+
+    }
+
+
 }

@@ -19,12 +19,12 @@ protocol PlacesListViewProtocol: class {
 protocol PlacesListPresenterProtocol: class {
     //PlacesListView -> PlacesListPresenter
     func notifyViewLoaded()
-    func placesCount() -> Int
     func didSelectPlaces(at index: Int)
 
     //PlacesListInteractor -> PlacesListPresenter
-    func placesListFetched(places: [NSObject])
+    func placesListFetched(places: VenuesResponse)
     func placesListFetchFailed()
+    func venues() -> [Venues]
 }
 
 protocol PlacesListRouterProtocol: class {
@@ -36,4 +36,6 @@ protocol PlacesListRouterProtocol: class {
 protocol PlacesListInteractorProtocol: class {
     //Presenter -> Interactor
     func fetchPlaces()
+    func succeed(_ response: VenuesResponse)
+    func failed()
 }

@@ -14,6 +14,10 @@
 		FA1EF9D123BA20B900104D4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA1EF9D023BA20B900104D4B /* Assets.xcassets */; };
 		FA1EF9D423BA20B900104D4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA1EF9D223BA20B900104D4B /* LaunchScreen.storyboard */; };
 		FA1EF9E023BA211B00104D4B /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1EF9DF23BA211B00104D4B /* Network.swift */; };
+		FA32CD5123BB261700A98A93 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32CD5023BB261700A98A93 /* Endpoints.swift */; };
+		FA32CD5423BB2A9A00A98A93 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32CD5323BB2A9A00A98A93 /* Constants.swift */; };
+		FA32CD5823BB5AE100A98A93 /* PlacesListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32CD5623BB5AE100A98A93 /* PlacesListCell.swift */; };
+		FA32CD5923BB5AE100A98A93 /* PlacesListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA32CD5723BB5AE100A98A93 /* PlacesListCell.xib */; };
 		FABA677A23BA25FB009DC03C /* PlacesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABA677923BA25FB009DC03C /* PlacesProtocol.swift */; };
 		FABA677C23BA27EC009DC03C /* PlacesListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABA677B23BA27EC009DC03C /* PlacesListInteractor.swift */; };
 		FABA677E23BA2816009DC03C /* PlacesListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABA677D23BA2816009DC03C /* PlacesListPresenter.swift */; };
@@ -32,6 +36,10 @@
 		FA1EF9D323BA20B900104D4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA1EF9D523BA20B900104D4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA1EF9DF23BA211B00104D4B /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		FA32CD5023BB261700A98A93 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		FA32CD5323BB2A9A00A98A93 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FA32CD5623BB5AE100A98A93 /* PlacesListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesListCell.swift; sourceTree = "<group>"; };
+		FA32CD5723BB5AE100A98A93 /* PlacesListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlacesListCell.xib; sourceTree = "<group>"; };
 		FABA677923BA25FB009DC03C /* PlacesProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesProtocol.swift; sourceTree = "<group>"; };
 		FABA677B23BA27EC009DC03C /* PlacesListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesListInteractor.swift; sourceTree = "<group>"; };
 		FABA677D23BA2816009DC03C /* PlacesListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesListPresenter.swift; sourceTree = "<group>"; };
@@ -74,6 +82,7 @@
 				FA1EF9DB23BA20BF00104D4B /* Application */,
 				FABA677723BA2540009DC03C /* Protocols */,
 				FA1EF9DC23BA20CB00104D4B /* PlacesModule */,
+				FA32CD5223BB2A8600A98A93 /* Utils */,
 				FA1EF9CD23BA20B700104D4B /* Main.storyboard */,
 				FA1EF9D223BA20B900104D4B /* LaunchScreen.storyboard */,
 				FA1EF9DD23BA20DB00104D4B /* Resources */,
@@ -116,8 +125,26 @@
 			isa = PBXGroup;
 			children = (
 				FA1EF9DF23BA211B00104D4B /* Network.swift */,
+				FA32CD5023BB261700A98A93 /* Endpoints.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		FA32CD5223BB2A8600A98A93 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FA32CD5323BB2A9A00A98A93 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		FA32CD5523BB5AC300A98A93 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FA32CD5623BB5AE100A98A93 /* PlacesListCell.swift */,
+				FA32CD5723BB5AE100A98A93 /* PlacesListCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		FABA677723BA2540009DC03C /* Protocols */ = {
@@ -139,6 +166,7 @@
 		FABA678323BA28CA009DC03C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FA32CD5523BB5AC300A98A93 /* Cell */,
 				FABA678423BA28E1009DC03C /* PlacesListViewController.xib */,
 			);
 			path = Views;
@@ -205,6 +233,7 @@
 				FABA678523BA28E1009DC03C /* PlacesListViewController.xib in Resources */,
 				FA1EF9D423BA20B900104D4B /* LaunchScreen.storyboard in Resources */,
 				FA1EF9D123BA20B900104D4B /* Assets.xcassets in Resources */,
+				FA32CD5923BB5AE100A98A93 /* PlacesListCell.xib in Resources */,
 				FA1EF9CF23BA20B700104D4B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,9 +246,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA1EF9CC23BA20B700104D4B /* PlacesListViewController.swift in Sources */,
+				FA32CD5423BB2A9A00A98A93 /* Constants.swift in Sources */,
 				FABA677A23BA25FB009DC03C /* PlacesProtocol.swift in Sources */,
+				FA32CD5823BB5AE100A98A93 /* PlacesListCell.swift in Sources */,
 				FABA678023BA2833009DC03C /* PlacesListEntity.swift in Sources */,
 				FABA678223BA2842009DC03C /* PlacesListRouter.swift in Sources */,
+				FA32CD5123BB261700A98A93 /* Endpoints.swift in Sources */,
 				FABA677C23BA27EC009DC03C /* PlacesListInteractor.swift in Sources */,
 				FA1EF9C823BA20B700104D4B /* AppDelegate.swift in Sources */,
 				FA1EF9E023BA211B00104D4B /* Network.swift in Sources */,

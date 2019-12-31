@@ -9,10 +9,10 @@
 import UIKit
 
 final class PlacesListPresenter {
-    weak var view: PlacesListViewProtocol?
-    weak var router: PlacesListRouterProtocol?
-    weak var interactor: PlacesListInteractorProtocol?
-    var placesList: [NSObject]?
+    var view: PlacesListViewProtocol?
+    var router: PlacesListRouterProtocol?
+    var interactor: PlacesListInteractorProtocol?
+    var venuesResponse: VenuesResponse?
 }
 
 extension PlacesListPresenter: PlacesListPresenterProtocol {
@@ -21,21 +21,24 @@ extension PlacesListPresenter: PlacesListPresenterProtocol {
         view?.setupInitialView()
         view?.showLoading()
         interactor?.fetchPlaces()
-    }
-
-    func placesCount() -> Int {
-        return placesList?.count ?? 0
+        view?.setNavigationTitle(with: "Places")
     }
 
     func didSelectPlaces(at index: Int) {
 
     }
 
-    func placesListFetched(places: [NSObject]) {
-        placesList = places
+    func placesListFetched(places: VenuesResponse) {
+        venuesResponse = places
+        view?.reloadData()
     }
 
     func placesListFetchFailed() {
+        interactor?.failed()
+    }
 
+    func venues() -> [Venues] {
+        guard let venues = venuesResponse?.response.venues else { return [] }
+        return venues
     }
 }

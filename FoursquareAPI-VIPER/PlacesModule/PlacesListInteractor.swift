@@ -9,12 +9,29 @@
 import UIKit
 
 final class PlacesListInteractor {
-    weak var presenter: PlacesListPresenterProtocol?
+    var presenter: PlacesListPresenterProtocol?
 }
 
 extension PlacesListInteractor: PlacesListInteractorProtocol {
 
     func fetchPlaces() {
-        Network.shared.request()
+        let urlParameters: [String: String] = ["near": "Istanbul",
+                                               "client_id": Constant.ClientKeys.clientId,
+                                               "client_secret": Constant.ClientKeys.clientSecret,
+                                               "v": "20193112"]
+        Network.shared.request(path: Endpoints.search,
+                               method: .get,
+                               bodyParameters: nil,
+                               urlParameters: urlParameters,
+                               succeed: succeed,
+                               failed: failed)
+    }
+
+    func succeed(_ response: VenuesResponse) {
+        presenter?.placesListFetched(places: response)
+    }
+
+    func failed() {
+        print("Failed..")
     }
 }
