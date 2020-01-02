@@ -21,5 +21,13 @@ FoursquareAPI-VIPER is an iOS project that using Foursquare API and VIPER archit
 git clone https://github.com/bsenturk/FoursquareAPI-VIPER.git
 ```
 
+## Requirements
+
++ iOS 13+
++ Xcode 11+
+
+## Author
+
+Burak Ahmet Şentürk
 
 
