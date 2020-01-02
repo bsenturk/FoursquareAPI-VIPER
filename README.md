@@ -30,4 +30,6 @@ git clone https://github.com/bsenturk/FoursquareAPI-VIPER.git
 
 Burak Ahmet Şentürk b95senturk@gmail.com
 
+## License
 
+FoursquareAPI-VIPER is available under the MIT license. See the LICENSE file for more info.
