@@ -42,7 +42,7 @@ final class Location: Decodable {
 
     var address: String? {
         get {
-            return "\(city ?? "") \(state ?? "")"
+            return "\(city ?? ""), \(state ?? "")"
         }
      }
 }

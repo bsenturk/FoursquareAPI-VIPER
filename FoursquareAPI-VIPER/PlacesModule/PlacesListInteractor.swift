@@ -15,7 +15,7 @@ final class PlacesListInteractor {
 extension PlacesListInteractor: PlacesListInteractorProtocol {
 
     func fetchPlaces() {
-        let urlParameters: [String: String] = ["near": "Istanbul",
+        let urlParameters: [String: String] = ["near": "Besiktas",
                                                "client_id": Constant.ClientKeys.clientId,
                                                "client_secret": Constant.ClientKeys.clientSecret,
                                                "v": getDate()]

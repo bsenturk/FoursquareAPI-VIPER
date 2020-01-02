@@ -25,11 +25,11 @@ final class PlacesListViewController: UIViewController {
 extension PlacesListViewController: PlacesListViewProtocol {
 
     func showLoading() {
-
+        ProgressManager.shared.show(in: view)
     }
 
     func hideLoading() {
-
+        ProgressManager.shared.hide()
     }
 
     func reloadData() {

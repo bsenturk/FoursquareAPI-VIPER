@@ -33,6 +33,7 @@ extension PlacesListPresenter: PlacesListPresenterProtocol {
 
     func placesListFetched(places: VenuesResponse) {
         venuesResponse = places
+        view?.hideLoading()
         view?.reloadData()
     }
 
