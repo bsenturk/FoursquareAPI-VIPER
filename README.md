@@ -28,6 +28,6 @@ git clone https://github.com/bsenturk/FoursquareAPI-VIPER.git
 
 ## Author
 
-Burak Ahmet Şentürk
+Burak Ahmet Şentürk b95senturk@gmail.com
 
 
