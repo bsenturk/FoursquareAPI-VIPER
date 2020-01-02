@@ -1,6 +1,6 @@
 # FoursquareAPI-VIPER
 
-FoursquareAPI-VIPER is an iOS project that using Foursqaure API and VIPER architecture.
+FoursquareAPI-VIPER is an iOS project that using Foursquare API and VIPER architecture.
 
 # Screenshots
 
