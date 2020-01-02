@@ -16,7 +16,7 @@ FoursquareAPI-VIPER is an iOS project that using Foursquare API and VIPER archit
 ## Architecture
 
 <div align="center">
-<img src="hhttps://github.com/bsenturk/FoursquareAPI-VIPER/blob/master/screenshots/images.png" width="500" height="750"/>
+<img src="hhttps://github.com/bsenturk/FoursquareAPI-VIPER/blob/master/screenshots/images.png" width="730" height="420"/>
 <div/>
 
 
