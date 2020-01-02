@@ -18,6 +18,12 @@
 		FA32CD5423BB2A9A00A98A93 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32CD5323BB2A9A00A98A93 /* Constants.swift */; };
 		FA32CD5823BB5AE100A98A93 /* PlacesListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32CD5623BB5AE100A98A93 /* PlacesListCell.swift */; };
 		FA32CD5923BB5AE100A98A93 /* PlacesListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA32CD5723BB5AE100A98A93 /* PlacesListCell.xib */; };
+		FA32CD5D23BB751C00A98A93 /* PlacesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32CD5B23BB751C00A98A93 /* PlacesDetailViewController.swift */; };
+		FA32CD5E23BB751C00A98A93 /* PlacesDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA32CD5C23BB751C00A98A93 /* PlacesDetailViewController.xib */; };
+		FA32CD6123BB75E900A98A93 /* PlacesDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32CD6023BB75E900A98A93 /* PlacesDetailInteractor.swift */; };
+		FA32CD6323BB760600A98A93 /* PlacesDetailProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32CD6223BB760600A98A93 /* PlacesDetailProtocol.swift */; };
+		FA32CD6523BB767D00A98A93 /* PlacesDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32CD6423BB767D00A98A93 /* PlacesDetailPresenter.swift */; };
+		FA32CD6723BB768E00A98A93 /* PlacesDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32CD6623BB768E00A98A93 /* PlacesDetailRouter.swift */; };
 		FABA677A23BA25FB009DC03C /* PlacesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABA677923BA25FB009DC03C /* PlacesProtocol.swift */; };
 		FABA677C23BA27EC009DC03C /* PlacesListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABA677B23BA27EC009DC03C /* PlacesListInteractor.swift */; };
 		FABA677E23BA2816009DC03C /* PlacesListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABA677D23BA2816009DC03C /* PlacesListPresenter.swift */; };
@@ -40,6 +46,12 @@
 		FA32CD5323BB2A9A00A98A93 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FA32CD5623BB5AE100A98A93 /* PlacesListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesListCell.swift; sourceTree = "<group>"; };
 		FA32CD5723BB5AE100A98A93 /* PlacesListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlacesListCell.xib; sourceTree = "<group>"; };
+		FA32CD5B23BB751C00A98A93 /* PlacesDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesDetailViewController.swift; sourceTree = "<group>"; };
+		FA32CD5C23BB751C00A98A93 /* PlacesDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlacesDetailViewController.xib; sourceTree = "<group>"; };
+		FA32CD6023BB75E900A98A93 /* PlacesDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesDetailInteractor.swift; sourceTree = "<group>"; };
+		FA32CD6223BB760600A98A93 /* PlacesDetailProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesDetailProtocol.swift; sourceTree = "<group>"; };
+		FA32CD6423BB767D00A98A93 /* PlacesDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesDetailPresenter.swift; sourceTree = "<group>"; };
+		FA32CD6623BB768E00A98A93 /* PlacesDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesDetailRouter.swift; sourceTree = "<group>"; };
 		FABA677923BA25FB009DC03C /* PlacesProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesProtocol.swift; sourceTree = "<group>"; };
 		FABA677B23BA27EC009DC03C /* PlacesListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesListInteractor.swift; sourceTree = "<group>"; };
 		FABA677D23BA2816009DC03C /* PlacesListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesListPresenter.swift; sourceTree = "<group>"; };
@@ -82,6 +94,7 @@
 				FA1EF9DB23BA20BF00104D4B /* Application */,
 				FABA677723BA2540009DC03C /* Protocols */,
 				FA1EF9DC23BA20CB00104D4B /* PlacesModule */,
+				FA32CD5A23BB74DC00A98A93 /* PlacesDetailModule */,
 				FA32CD5223BB2A8600A98A93 /* Utils */,
 				FA1EF9CD23BA20B700104D4B /* Main.storyboard */,
 				FA1EF9D223BA20B900104D4B /* LaunchScreen.storyboard */,
@@ -147,6 +160,26 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		FA32CD5A23BB74DC00A98A93 /* PlacesDetailModule */ = {
+			isa = PBXGroup;
+			children = (
+				FA32CD5B23BB751C00A98A93 /* PlacesDetailViewController.swift */,
+				FA32CD6023BB75E900A98A93 /* PlacesDetailInteractor.swift */,
+				FA32CD6423BB767D00A98A93 /* PlacesDetailPresenter.swift */,
+				FA32CD6623BB768E00A98A93 /* PlacesDetailRouter.swift */,
+				FA32CD5F23BB752500A98A93 /* Views */,
+			);
+			path = PlacesDetailModule;
+			sourceTree = "<group>";
+		};
+		FA32CD5F23BB752500A98A93 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA32CD5C23BB751C00A98A93 /* PlacesDetailViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		FABA677723BA2540009DC03C /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				FABA677923BA25FB009DC03C /* PlacesProtocol.swift */,
+				FA32CD6223BB760600A98A93 /* PlacesDetailProtocol.swift */,
 			);
 			path = Places;
 			sourceTree = "<group>";
@@ -231,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FABA678523BA28E1009DC03C /* PlacesListViewController.xib in Resources */,
+				FA32CD5E23BB751C00A98A93 /* PlacesDetailViewController.xib in Resources */,
 				FA1EF9D423BA20B900104D4B /* LaunchScreen.storyboard in Resources */,
 				FA1EF9D123BA20B900104D4B /* Assets.xcassets in Resources */,
 				FA32CD5923BB5AE100A98A93 /* PlacesListCell.xib in Resources */,
@@ -248,14 +283,19 @@
 				FA1EF9CC23BA20B700104D4B /* PlacesListViewController.swift in Sources */,
 				FA32CD5423BB2A9A00A98A93 /* Constants.swift in Sources */,
 				FABA677A23BA25FB009DC03C /* PlacesProtocol.swift in Sources */,
+				FA32CD6123BB75E900A98A93 /* PlacesDetailInteractor.swift in Sources */,
 				FA32CD5823BB5AE100A98A93 /* PlacesListCell.swift in Sources */,
 				FABA678023BA2833009DC03C /* PlacesListEntity.swift in Sources */,
 				FABA678223BA2842009DC03C /* PlacesListRouter.swift in Sources */,
 				FA32CD5123BB261700A98A93 /* Endpoints.swift in Sources */,
+				FA32CD6723BB768E00A98A93 /* PlacesDetailRouter.swift in Sources */,
 				FABA677C23BA27EC009DC03C /* PlacesListInteractor.swift in Sources */,
+				FA32CD6523BB767D00A98A93 /* PlacesDetailPresenter.swift in Sources */,
+				FA32CD6323BB760600A98A93 /* PlacesDetailProtocol.swift in Sources */,
 				FA1EF9C823BA20B700104D4B /* AppDelegate.swift in Sources */,
 				FA1EF9E023BA211B00104D4B /* Network.swift in Sources */,
 				FABA677E23BA2816009DC03C /* PlacesListPresenter.swift in Sources */,
+				FA32CD5D23BB751C00A98A93 /* PlacesDetailViewController.swift in Sources */,
 				FA1EF9CA23BA20B700104D4B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

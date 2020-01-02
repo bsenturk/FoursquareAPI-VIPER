@@ -18,7 +18,7 @@ extension PlacesListInteractor: PlacesListInteractorProtocol {
         let urlParameters: [String: String] = ["near": "Istanbul",
                                                "client_id": Constant.ClientKeys.clientId,
                                                "client_secret": Constant.ClientKeys.clientSecret,
-                                               "v": "20193112"]
+                                               "v": getDate()]
         Network.shared.request(path: Endpoints.search,
                                method: .get,
                                bodyParameters: nil,
@@ -33,5 +33,13 @@ extension PlacesListInteractor: PlacesListInteractorProtocol {
 
     func failed() {
         print("Failed..")
+    }
+
+    func getDate() -> String {
+        let date = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyyMMdd"
+        let dateString = dateFormatter.string(from: date)
+        return dateString
     }
 }

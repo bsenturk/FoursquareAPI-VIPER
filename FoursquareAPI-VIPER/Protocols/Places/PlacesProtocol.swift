@@ -30,7 +30,7 @@ protocol PlacesListPresenterProtocol: class {
 protocol PlacesListRouterProtocol: class {
     //PlacesListPresenter -> PlacesListRoter
     func popBack()
-    func present()
+    func push(name: String, lat: Double, lng: Double)
 }
 
 protocol PlacesListInteractorProtocol: class {
@@ -38,4 +38,5 @@ protocol PlacesListInteractorProtocol: class {
     func fetchPlaces()
     func succeed(_ response: VenuesResponse)
     func failed()
+    func getDate() -> String
 }

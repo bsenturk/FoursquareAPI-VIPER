@@ -10,8 +10,9 @@ import UIKit
 
 final class PlacesListRouter {
     weak var presenter: PlacesListPresenterProtocol?
+    weak var navigationController: UINavigationController?
 
-    static func createModule() -> PlacesListViewController {
+    static func createModule(using navigationController: UINavigationController) -> PlacesListViewController {
 
         let router = PlacesListRouter()
         let presenter = PlacesListPresenter()
@@ -24,6 +25,8 @@ final class PlacesListRouter {
         presenter.view = view
 
         router.presenter = presenter
+        router.navigationController = navigationController
+
 
         interactor.presenter = presenter
 
@@ -38,8 +41,13 @@ extension PlacesListRouter: PlacesListRouterProtocol {
 
     }
 
-    func present() {
-
+    func push(name: String, lat: Double, lng: Double) {
+        let placesDetailModule = PlacesDetailRouter.createModule(name: name,
+                                                                 lat: lat,
+                                                                 lng: lng)
+        navigationController?.pushViewController(placesDetailModule,
+                                                 animated: true)
+    
     }
 
 

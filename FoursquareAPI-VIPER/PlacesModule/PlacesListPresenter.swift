@@ -25,7 +25,10 @@ extension PlacesListPresenter: PlacesListPresenterProtocol {
     }
 
     func didSelectPlaces(at index: Int) {
-
+        let place = venuesResponse?.response.venues[index]
+        router?.push(name: place?.name ?? "",
+                     lat:  place?.location.lat ?? 0.0,
+                     lng:  place?.location.lng ?? 0.0)
     }
 
     func placesListFetched(places: VenuesResponse) {
